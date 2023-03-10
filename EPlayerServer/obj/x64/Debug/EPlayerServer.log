@@ -1,0 +1,49 @@
+﻿  正在验证源
+  正在将源远程复制到“10.1.125.83”
+  正在验证体系结构
+  正在验证体系结构
+  正在启动远程生成
+  正在编译源:
+  CServer.cpp
+  DatabaseHelper.cpp
+  Epoll.cpp
+  HttpParser.cpp
+  http_parser.c
+  json_reader.cpp
+  json_value.cpp
+  json_writer.cpp
+  Logger.cpp
+  main.cpp
+/usr/include/c++/11/functional(571,23): error : no match for call to ‘(std::_Mu<std::_Placeholder<1>, false, true>) (std::__tuple_element_t<1, std::tuple<CEPlayerServer*, std::_Placeholder<1>, std::_Placeholder<2> > >&, std::tuple<>&)’
+/usr/include/c++/11/functional(363,9): message : candidate: ‘template<class _Tuple> std::_Safe_tuple_element_t<(std::is_placeholder<_Tp>::value - 1), _Tuple>&& std::_Mu<_Arg, false, true>::operator()(const volatile _Arg&, _Tuple&) const volatile [with _Tuple = _Tuple; _Arg = std::_Placeholder<1>]’
+/usr/include/c++/11/functional(363,9): message :   363 |         operator()(const volatile _Arg&, _Tuple& __tuple) const volatile
+/usr/include/c++/11/functional(363,9): message :       |         ^~~~~~~~
+/usr/include/c++/11/functional(363,9): message : template argument deduction/substitution failed:
+/usr/include/c++/11/functional(274,11): error : no type named ‘type’ in ‘struct std::enable_if<false, std::tuple_element<0, std::tuple<> > >’
+/usr/include/c++/11/functional(274,11): error :   274 |     using _Safe_tuple_element_t
+/usr/include/c++/11/functional(274,11): error :       |           ^~~~~~~~~~~~~~~~~~~~~
+/usr/include/c++/11/functional(571,23): error : no match for call to ‘(std::_Mu<std::_Placeholder<2>, false, true>) (std::__tuple_element_t<2, std::tuple<CEPlayerServer*, std::_Placeholder<1>, std::_Placeholder<2> > >&, std::tuple<CSocketBase*&>&)’
+/usr/include/c++/11/functional(363,9): message : candidate: ‘template<class _Tuple> std::_Safe_tuple_element_t<(std::is_placeholder<_Tp>::value - 1), _Tuple>&& std::_Mu<_Arg, false, true>::operator()(const volatile _Arg&, _Tuple&) const volatile [with _Tuple = _Tuple; _Arg = std::_Placeholder<2>]’
+/usr/include/c++/11/functional(363,9): message :   363 |         operator()(const volatile _Arg&, _Tuple& __tuple) const volatile
+/usr/include/c++/11/functional(363,9): message :       |         ^~~~~~~~
+/usr/include/c++/11/functional(363,9): message : template argument deduction/substitution failed:
+/usr/include/c++/11/functional(274,11): error : no type named ‘type’ in ‘struct std::enable_if<false, std::tuple_element<1, std::tuple<CSocketBase*&> > >’
+/usr/include/c++/11/functional(274,11): error :   274 |     using _Safe_tuple_element_t
+/usr/include/c++/11/functional(274,11): error :       |           ^~~~~~~~~~~~~~~~~~~~~
+  MysqlClient.cpp
+  OpenSSLHelper.cpp
+  Sqlite3Client.cpp
+  sqlite3.c
+E:\VSStudioProject\EPlayerServer\EPlayerServer\sqlite3\sqlite3.c(113122,3): warning : this ‘if’ clause does not guard... [-Wmisleading-indentation]
+E:\VSStudioProject\EPlayerServer\EPlayerServer\sqlite3\sqlite3.c(113122,3): warning : 113122 |   if( pIdx->pPartIdxWhere!=0 ) a[0] -= 10;  assert( 10==sqlite3LogEst(2) );
+E:\VSStudioProject\EPlayerServer\EPlayerServer\sqlite3\sqlite3.c(113122,3): warning :        |   ^~
+E:\VSStudioProject\EPlayerServer\EPlayerServer\sqlite3\sqlite3.c(113122,45): message : ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+E:\VSStudioProject\EPlayerServer\EPlayerServer\sqlite3\sqlite3.c(113122,45): message : 113122 |   if( pIdx->pPartIdxWhere!=0 ) a[0] -= 10;  assert( 10==sqlite3LogEst(2) );
+E:\VSStudioProject\EPlayerServer\EPlayerServer\sqlite3\sqlite3.c(113122,45): message :        |                                             ^~~~~~
+E:\VSStudioProject\EPlayerServer\EPlayerServer\sqlite3\sqlite3.c(113123,3): warning : this ‘if’ clause does not guard... [-Wmisleading-indentation]
+E:\VSStudioProject\EPlayerServer\EPlayerServer\sqlite3\sqlite3.c(113123,3): warning : 113123 |   if( a[0]<33 ) a[0] = 33;                  assert( 33==sqlite3LogEst(10) );
+E:\VSStudioProject\EPlayerServer\EPlayerServer\sqlite3\sqlite3.c(113123,3): warning :        |   ^~
+E:\VSStudioProject\EPlayerServer\EPlayerServer\sqlite3\sqlite3.c(113123,45): message : ...this statement, but the latter is misleadingly indented as if it were guarded by the ‘if’
+E:\VSStudioProject\EPlayerServer\EPlayerServer\sqlite3\sqlite3.c(113123,45): message : 113123 |   if( a[0]<33 ) a[0] = 33;                  assert( 33==sqlite3LogEst(10) );
+E:\VSStudioProject\EPlayerServer\EPlayerServer\sqlite3\sqlite3.c(113123,45): message :        |                                             ^~~~~~
+  Thread.cpp
