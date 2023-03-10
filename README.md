@@ -1,2 +1,3 @@
 # EPlayerServer
 High-concurrency backend server based on C++11 and Linux.
+The project is implemented in C++11 on a Linux system as a backend server, using variadic templates and multi-threading/multi-processing technologies. The core module is designed based on the Reactor pattern using Epoll, supporting high-concurrency task processing and non-blocking network IO communication. The database adopts a generic abstract class to provide a unified interface to the outside, and also implements ORM for SQL of different databases, ensuring project portability and the ability to replace underlying databases. The data transmission encryption mechanism is implemented using the OpenSSL signature verification algorithm, and data transmission is packaged in Json format.
